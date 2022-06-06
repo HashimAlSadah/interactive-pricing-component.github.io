@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="intro">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. <br class="mobile">No credit card required.</p>
+      </div>
+      <img src="./images/pattern-circles.svg" alt="overlapped circles">
+    </header>
+
+    <main class="main">
+
+      <header class="main__header">
+        <div class="offer">
+          <p><span id="views-number">100</span>K Pageviews</p>
+          <h1 class="desktop">$<span class="offer-price">16.00</span><span class="period">/ month</span></h1>
+        </div>
+  
+        <div class="slider">
+          <input type="range" max="100" min="10" step="10" value="50">
+          <div class="selector-btn"></div>
+          <div class="selector">
+            <!-- <div class="selector-btn"></div> -->
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+  
+        <h1 class="mobile">$<span class="offer-price">16.00</span>&thinsp;<span class="period">/ month</span></h1>
+      </header>
+      
+
+      <div class="toggle-state">
+        <p>Monthly Billing</p>
+
+        <div class="toggle-button">
+          <div class="circle"></div>
+        </div>
+
+        <p>Yearly Billing</p>
+        <p id="discount"><span class="mobile">-</span>25% <span class="desktop">discount</span></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <footer class="main__footer">
+        <ul class="features">
+          <li><img src="./images/icon-check.svg" alt="check icon"> <p>Unlimited websites</p></li>
+          <li><img src="./images/icon-check.svg" alt="check icon"><p>100% data ownership</p></li>
+          <li><img src="./images/icon-check.svg" alt="check icon"><p>Email reports</p></li>
+        </ul>
+
+        <a href="#">Start my trial</a>
+      </footer>
+    </main>
+  </div>
+   
+  
+  <footer class="attribution body__footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/HashimAlSadah">HashimAlSadah</a>.
+  </footer>
+</body>
+</html>
